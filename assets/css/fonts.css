@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'Geometria';
+	src: url('/fonts/Geometria-Bold.eot');
+	src: local('/fonts/Geometria-Bold'),
+		url('/fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Geometria-Bold.woff2') format('woff2'),
+		url('/fonts/Geometria-Bold.woff') format('woff'),
+		url('/fonts/Geometria-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Involve';
+	src: url('/fonts/Involve-Regular.eot');
+	src: local('/fonts/Involve Regular'), local('Involve-Regular'),
+		url('/fonts/Involve-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Involve-Regular.woff2') format('woff2'),
+		url('/fonts/Involve-Regular.woff') format('woff'),
+		url('/fonts/Involve-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Involve';
+	src: url('/fonts/Involve-Medium.eot');
+	src: local('/fonts/Involve Medium'), local('Involve-Medium'),
+		url('/fonts/Involve-Medium.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Involve-Medium.woff2') format('woff2'),
+		url('/fonts/Involve-Medium.woff') format('woff'),
+		url('/fonts/Involve-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Geologica';
+	src: url('/fonts/GeologicaRoman-Medium.eot');
+	src: local('/fonts/Geologica Roman Medium'), local('GeologicaRoman-Medium'),
+		url('/fonts/GeologicaRoman-Medium.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/GeologicaRoman-Medium.woff2') format('woff2'),
+		url('/fonts/GeologicaRoman-Medium.woff') format('woff'),
+		url('/fonts/GeologicaRoman-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Geologica';
+	src: url('/fonts/GeologicaRoman-Bold.eot');
+	src: local('/fonts/Geologica Roman Bold'), local('GeologicaRoman-Bold'),
+		url('/fonts/GeologicaRoman-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/GeologicaRoman-Bold.woff2') format('woff2'),
+		url('/fonts/GeologicaRoman-Bold.woff') format('woff'),
+		url('/fonts/GeologicaRoman-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
