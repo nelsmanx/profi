@@ -10,6 +10,8 @@
 		"postinstall": "nuxt prepare"
 	},
 	"dependencies": {
+		"bootstrap": "^5.3.3",
+		"inputmask": "^5.0.9",
 		"nuxt": "^3.15.4",
 		"vue": "latest",
 		"vue-router": "latest"

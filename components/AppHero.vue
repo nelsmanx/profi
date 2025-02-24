@@ -7,7 +7,7 @@
 				<div class="hero__inner-block">
 					<h1 class="hero__title"><span class="hl">Аутсорсинговое</span> агентство с&nbsp;заботой о&nbsp;вашем бизнесе</h1>
 					<p class="hero__desc">Узнайте все преимущества сотрудничества и&nbsp;решите проблемы найма и управления с Profi</p>
-					<a class="hero__button button-basic" href="#">Подробнее</a>
+					<a class="hero__button basic-button" href="#cta">Подробнее</a>
 				</div>
 				<div class="hero__inner-block">
 					<img class="hero__image" src="/images/hero.svg" alt="" aria-hidden="true">

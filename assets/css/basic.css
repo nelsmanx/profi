@@ -43,7 +43,7 @@ picture {
 }
 
 :root {
-	/* --bs-body-line-height: normal; */
+	--bs-body-line-height: normal;
 	--basic-color: #323232;
 	--primary-accent-color: #ec702d;
 	--secondary-accent-color: #557cca;
@@ -152,7 +152,13 @@ body {
 	font-style: normal;
 }
 
-.button-basic {
+.basic-title {
+	font-size: var(--section-title-fz);
+	font-weight: 500;
+	line-height: normal;
+}
+
+.basic-button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -165,5 +171,11 @@ body {
 	background-color: var(--primary-accent-color);
 	border: none;
 	border-radius: 28px;
+	transition: background-color 250ms ease-in-out;
 	cursor: pointer;
+}
+
+.basic-button:hover {
+	background-color: var(--secondary-accent-color);
+	transition: background-color 250ms ease-in-out;
 }

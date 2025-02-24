@@ -1,5 +1,5 @@
 <template>
-	<section class="about">
+	<section id="about" class="about">
 		<div class="container">
 			<div class="about__inner">
 				<div class="about__group">
@@ -8,7 +8,7 @@
 						<img class="about__image" src="/public/images/about.svg" alt="" aria-hidden="true">
 					</div>
 					<div class="about__group-block-2">
-						<h2 class="about__title">О нас</h2>
+						<h2 class="about__title basic-title">О нас</h2>
 						<div class="about__desc">
 							<p>Profi - компания, основанная экспертами. Уже более 15 лет мы&nbsp;предоставляем услуги по&nbsp;аутсорсингу и аутстаффингу персонала по всей России.</p>
 							<p>Выбирая Profi, вы выбираете профессионализм на каждом из&nbsp;этапов найма.</p>
@@ -35,8 +35,6 @@
 
 .about__title {
 	margin-bottom: 60px;
-	font-size: var(--section-title-fz);
-	font-weight: 500;
 	color: var(--primary-accent-color);
 }
 
@@ -86,7 +84,7 @@
 	font-weight: 400;
 	font-size: 30px;
 	line-height: 1.4;
-	color: #323232;
+	color: var(--basic-color);
 }
 
 .about__desc:deep(p:not(:last-child)) {

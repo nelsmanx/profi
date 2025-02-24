@@ -7,14 +7,14 @@
 				<img class="header__logo" src="/images/header-logo.svg" alt="Логотип компании">
 				<div class="header__nav">
 					<ul class="header__nav-list">
-						<li class="header__nav-item"><a class="header__nav-link" href="#">О нас</a></li>
-						<li class="header__nav-item"><a class="header__nav-link" href="#">Услуги</a></li>
-						<li class="header__nav-item"><a class="header__nav-link" href="#">Цены</a></li>
-						<li class="header__nav-item"><a class="header__nav-link" href="#">Вопросы</a></li>
-						<li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
+						<li class="header__nav-item"><a class="header__nav-link" href="#about">О нас</a></li>
+						<li class="header__nav-item"><a class="header__nav-link" href="#services">Услуги</a></li>
+						<li class="header__nav-item"><a class="header__nav-link" href="#prices">Цены</a></li>
+						<li class="header__nav-item"><a class="header__nav-link" href="#faq">Вопросы</a></li>
+						<li class="header__nav-item"><a class="header__nav-link" href="#footer">Контакты</a></li>
 					</ul>
 				</div>
-				<a class="header__button button-basic" href="#">Заказать звонок</a>
+				<a class="header__button basic-button" href="#cta">Заказать звонок</a>
 			</div>
 		</div>
 	</header>
@@ -56,7 +56,6 @@
 .header__nav-link {
 	font-size: 20px;
 	font-weight: 400;
-	line-height: normal;
 	color: #000;
 	cursor: pointer;
 }
