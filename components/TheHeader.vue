@@ -22,7 +22,7 @@
 
 <style scoped>
 .header {
-	margin-bottom: var(--section-space);
+	margin-bottom: 130px;
 	padding: 25px 0;
 }
 
@@ -62,13 +62,27 @@
 
 .header__button {}
 
+@media (max-width: 1599.98px) {
+	.header {
+		margin-bottom: 110px;
+	}
+}
+
 @media (max-width: 1399.98px) {
+	.header {
+		margin-bottom: 100px;
+	}
+
 	.header__inner {
 		gap: 100px;
 	}
 }
 
 @media (max-width: 1199.98px) {
+	.header {
+		margin-bottom: 80px;
+	}
+
 	.header__logo {
 		width: 150px;
 	}
@@ -88,6 +102,7 @@
 
 @media (max-width: 991.98px) {
 	.header {
+		margin-bottom: 70px;
 		padding: 20px 0;
 	}
 
@@ -110,11 +125,16 @@
 
 @media (max-width: 767.98px) {
 	.header {
+		margin-bottom: 50px;
 		padding: 15px 0;
 	}
 }
 
 @media (max-width: 575.98px) {
+	.header {
+		margin-bottom: 30px;
+	}
+
 	.header__logo {
 		width: 110px;
 	}
@@ -124,8 +144,29 @@
 	}
 }
 
-@media (max-width: 479.98px) {
+/* @media (max-width: 479.98px) {
 	.header {
+		padding: 10px 0;
+	}
+
+	.header__logo {
+		width: 90px;
+	}
+
+	.header__button {
+		padding: 1em 0.8em;
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 375.98px) {
+	.header {
+		margin-bottom: 25px;
+	}
+} */
+@media (max-width: 375.98px) {
+	.header {
+		margin-bottom: 25px;
 		padding: 10px 0;
 	}
 

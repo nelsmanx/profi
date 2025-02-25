@@ -3,7 +3,7 @@ const companyInfo = useCompanyInfo();
 </script>
 
 <template>
-	<footer class="footer">
+	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="footer__contacts">
 				<div class="footer__contacts-inner">

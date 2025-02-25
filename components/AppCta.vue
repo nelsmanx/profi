@@ -34,9 +34,8 @@ const active = ref('seek-job');
 
 <style scoped>
 .cta {
-	margin-bottom: var(--section-space);
+	margin-bottom: calc(var(--section-space) + 20px);
 	padding-top: 22px;
-	padding-bottom: 20px;
 }
 
 .cta__inner {
