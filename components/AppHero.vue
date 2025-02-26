@@ -20,7 +20,7 @@
 
 <style scoped>
 .hero {
-	margin-bottom: var(--section-space);
+	margin-bottom: calc(var(--section-space) + 40px);
 }
 
 .hero__inner {
@@ -117,9 +117,6 @@
 		gap: 40px;
 	}
 
-	/* .hero__title {
-		margin-bottom: 40px;
-	} */
 	.hero__desc {
 		font-size: 24px;
 	}
@@ -140,7 +137,6 @@
 
 	.hero__title {
 		max-width: 600px;
-		/* margin-bottom: 30px; */
 	}
 
 	.hero__desc {
@@ -162,16 +158,16 @@
 }
 
 @media (max-width: 767.98px) {
+	.hero {
+		margin-bottom: calc(var(--section-space));
+	}
+
 	.hero__desc {
 		font-size: 18px;
 	}
 }
 
 @media (max-width: 575.98px) {
-
-	/* .hero:deep(.container) {
-		max-width: 380px;
-	} */
 	.hero__inner {
 		gap: 30px;
 	}
@@ -182,12 +178,8 @@
 
 	.hero__title {
 		max-width: 380px;
-		/* margin-bottom: 30px; */
 	}
 
-	/* .hero__title {
-		margin-bottom: 20px;
-	} */
 	.hero__desc {
 		font-size: 15px;
 	}

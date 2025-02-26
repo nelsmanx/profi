@@ -39,8 +39,7 @@ const services = [
 
 <style scoped>
 .services {
-	margin-bottom: var(--section-space);
-	padding-top: 50px;
+	margin-bottom: calc(var(--section-space) + 57px);
 }
 
 .services__title {
@@ -150,6 +149,10 @@ const services = [
 }
 
 @media (max-width: 767.98px) {
+	.services {
+		margin-bottom: calc(var(--section-space));
+	}
+
 	.services__list {
 		grid-template-columns: 100%;
 		justify-items: center;

@@ -39,7 +39,6 @@
 }
 
 .header__nav {
-	/* margin-inline: auto; */
 	max-width: 845px;
 	width: 100%;
 }
@@ -144,26 +143,6 @@
 	}
 }
 
-/* @media (max-width: 479.98px) {
-	.header {
-		padding: 10px 0;
-	}
-
-	.header__logo {
-		width: 90px;
-	}
-
-	.header__button {
-		padding: 1em 0.8em;
-		font-size: 10px;
-	}
-}
-
-@media (max-width: 375.98px) {
-	.header {
-		margin-bottom: 25px;
-	}
-} */
 @media (max-width: 375.98px) {
 	.header {
 		margin-bottom: 25px;

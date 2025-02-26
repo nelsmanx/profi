@@ -32,8 +32,7 @@ const active = ref('seek-job');
 
 <style scoped>
 .cta {
-	margin-bottom: calc(var(--section-space) + 20px);
-	padding-top: 22px;
+	margin-bottom: var(--section-space);
 }
 
 .cta__inner {
@@ -56,7 +55,6 @@ const active = ref('seek-job');
 }
 
 .cta__tab-item {
-	/* width: 306px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -298,7 +296,6 @@ const active = ref('seek-job');
 	.cta__tab-list {
 		order: 3;
 		gap: 15px;
-		/* width: fit-content; */
 		margin: 0;
 	}
 
@@ -361,6 +358,10 @@ const active = ref('seek-job');
 }
 
 @media (max-width: 575.98px) {
+	.cta {
+		margin-bottom: calc(var(--section-space) / 2);
+	}
+
 	.cta__inner {
 		gap: 30px;
 		max-width: 340px;

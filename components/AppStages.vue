@@ -47,8 +47,7 @@ const stages = [
 
 <style scoped>
 .stages {
-	margin-bottom: var(--section-space);
-	padding-top: 77px;
+	margin-bottom: calc(var(--section-space) + 40px);
 }
 
 .stages__title {
@@ -220,6 +219,10 @@ const stages = [
 }
 
 @media (max-width: 767.98px) {
+	.stages {
+		margin-bottom: calc(var(--section-space));
+	}
+
 	.stages__list {
 		grid-template-columns: 100%;
 		justify-items: center;
@@ -266,7 +269,6 @@ const stages = [
 	}
 
 	.stages__item-title {
-		/* max-width: 120px; */
 		font-size: 18px;
 	}
 
