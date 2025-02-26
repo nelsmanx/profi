@@ -6,6 +6,6 @@
 	<AppBenefits />
 	<AppPrices />
 	<!-- <AppFaq /> -->
-	<!-- <AppCta /> -->
+	<AppCta />
 	<!-- <TheFooter /> -->
 </template>

@@ -1,8 +1,10 @@
 <script setup>
+const mobileBreakpoint = 576;
 const isMobile = ref(false);
 
 onMounted(() => {
-	isMobile.value = window.innerWidth < 576 ? true : false;
+	isMobile.value = window.innerWidth < mobileBreakpoint ? true : false;
+	window.addEventListener('resize', () => isMobile.value = window.innerWidth < mobileBreakpoint ? true : false);
 });
 </script>
 
