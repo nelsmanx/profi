@@ -1,5 +1,15 @@
 <script setup>
+import ApiService from '~/services/ApiService';
 const active = ref('seek-job');
+
+async function sendEmail(event) {
+	const api = new ApiService();
+	const formData = new FormData(event.target);
+	const response = await api.sendForm(formData);
+	if (response) {
+		alert('Заявка успешно отправлена!');
+	}
+}
 </script>
 
 <template>
@@ -18,7 +28,7 @@ const active = ref('seek-job');
 					<h2 class="cta__title">Заказать <span class="hl">звонок</span></h2>
 					<p class="cta__desc">Оставляйте заявку - свяжемся в&nbsp;ближайшее время и&nbsp;ответим на&nbsp;все&nbsp;вопросы</p>
 				</div>
-				<form @submit.prevent class="cta__form" :class="`cta__form--${active}`">
+				<form @submit.prevent="sendEmail($event)" class="cta__form" :class="`cta__form--${active}`">
 					<input class="cta__form-input" type="text" name="name" placeholder="Имя" required>
 					<input class="cta__form-input" type="email" name="email" placeholder="E-mail">
 					<input v-inputmask-tel class="cta__form-input" type="tel" name="phone" placeholder="+ 7 999 999 99 99" required>
