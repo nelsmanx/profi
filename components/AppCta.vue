@@ -42,8 +42,7 @@ async function sendEmail(event) {
 
 <style scoped>
 .cta {
-	margin-bottom: calc(var(--section-space) + 20px);
-	padding-top: 22px;
+	margin-bottom: var(--section-space);
 }
 
 .cta__inner {
@@ -66,7 +65,6 @@ async function sendEmail(event) {
 }
 
 .cta__tab-item {
-	/* width: 306px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -308,7 +306,6 @@ async function sendEmail(event) {
 	.cta__tab-list {
 		order: 3;
 		gap: 15px;
-		/* width: fit-content; */
 		margin: 0;
 	}
 
@@ -371,6 +368,10 @@ async function sendEmail(event) {
 }
 
 @media (max-width: 575.98px) {
+	.cta {
+		margin-bottom: calc(var(--section-space) / 2);
+	}
+
 	.cta__inner {
 		gap: 30px;
 		max-width: 340px;

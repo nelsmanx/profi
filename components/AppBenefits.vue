@@ -33,8 +33,7 @@ const benefits = [
 
 <style scoped>
 .benefits {
-	margin-bottom: var(--section-space);
-	padding-top: 60px;
+	margin-bottom: calc(var(--section-space) + 23px);
 }
 
 .benefits__title {
@@ -140,6 +139,10 @@ const benefits = [
 }
 
 @media (max-width: 767.98px) {
+	.benefits {
+		margin-bottom: calc(var(--section-space));
+	}
+
 	.benefits__list {
 		grid-template-columns: 100%;
 		justify-items: center;

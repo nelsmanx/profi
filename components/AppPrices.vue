@@ -116,8 +116,7 @@ const prices = [
 
 <style scoped>
 .prices {
-	margin-bottom: var(--section-space);
-	padding-top: 43px;
+	margin-bottom: calc(var(--section-space) + 2px);
 }
 
 .prices__title {
@@ -318,6 +317,9 @@ const prices = [
 }
 
 @media (max-width: 767.98px) {
+	.prices {
+		margin-bottom: calc(var(--section-space));
+	}
 
 	.price-text--1,
 	.price-text--2 {
@@ -341,7 +343,6 @@ const prices = [
 	}
 
 	.prices__item-service-title {
-		/* margin-bottom: 20px; */
 		font-size: 20px;
 	}
 

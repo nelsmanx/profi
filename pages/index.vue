@@ -5,7 +5,7 @@
 	<AppStages />
 	<AppBenefits />
 	<AppPrices />
-	<!-- <AppFaq /> -->
+	<AppFaq />
 	<AppCta />
-	<!-- <TheFooter /> -->
+	<TheFooter />
 </template>

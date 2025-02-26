@@ -1,10 +1,10 @@
 <script setup>
-const mobileBreakpoint = 576;
-const isMobile = ref(false);
+const breakpoint = 1200;
+const isTextCollapsed = ref(false);
 
 onMounted(() => {
-	isMobile.value = window.innerWidth < mobileBreakpoint ? true : false;
-	window.addEventListener('resize', () => isMobile.value = window.innerWidth < mobileBreakpoint ? true : false);
+	isTextCollapsed.value = window.innerWidth < breakpoint ? true : false;
+	window.addEventListener('resize', () => isTextCollapsed.value = window.innerWidth < breakpoint ? true : false);
 });
 </script>
 
@@ -18,18 +18,18 @@ onMounted(() => {
 				</div>
 				<div class="about__block-content">
 					<h2 class="about__title basic-title">О нас</h2>
-					<div v-if="!isMobile" class="about__desc">
+					<div v-if="!isTextCollapsed" class="about__desc">
 						<p>Profi - компания, основанная экспертами. Уже&nbsp;более 15&nbsp;лет мы&nbsp;предоставляем услуги по&nbsp;аутсорсингу и аутстаффингу персонала по&nbsp;всей России.</p>
 						<p>Выбирая Profi, вы выбираете профессионализм на каждом из&nbsp;этапов найма.</p>
 					</div>
 					<div v-else class="about__desc">
-						<p>Profi - компания, основанная экспертами. Уже&nbsp;более 15&nbsp;лет мы&nbsp;предоставляем услуги по&nbsp;аутсорсингу и аутстаффингу персонала по&nbsp;всей России. Выбирая Profi, вы выбираете профессионализм на каждом из&nbsp;этапов найма.</p>
+						<p>Profi - компания, основанная экспертами. Уже&nbsp;более 15&nbsp;лет мы&nbsp;предоставляем услуги по&nbsp;аутсорсингу и аутстаффингу персонала по&nbsp;всей России. Выбирая Profi, вы выбираете профессионализм на&nbsp;каждом из&nbsp;этапов найма.</p>
 					</div>
 				</div>
 			</div>
 			<ul class="about__list">
 				<li class="about__item">Найдем любое количество сотрудников для&nbsp;выполнения&nbsp;задачи</li>
-				<li class="about__item">Более 15 лет опыта</li>
+				<li class="about__item">Более 15<br /> лет опыта</li>
 				<li class="about__item">Цены на предоставление персонала от&nbsp;160&nbsp;р</li>
 			</ul>
 		</div>
@@ -38,8 +38,7 @@ onMounted(() => {
 
 <style scoped>
 .about {
-	margin-bottom: var(--section-space);
-	padding-top: 60px;
+	margin-bottom: calc(var(--section-space) + 30px);
 }
 
 .about__inner {
@@ -280,6 +279,10 @@ onMounted(() => {
 		box-shadow: none;
 	}
 
+	.about__item:deep(br) {
+		display: none;
+	}
+
 	.about__item:nth-child(1) {
 		order: 3;
 		grid-column: -1/1;
@@ -297,6 +300,10 @@ onMounted(() => {
 }
 
 @media (max-width: 767.98px) {
+	.about {
+		margin-bottom: calc(var(--section-space));
+	}
+
 	.about__inner {
 		margin-bottom: 50px;
 	}

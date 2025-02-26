@@ -52,39 +52,37 @@ picture {
 }
 
 :root {
-	--section-space: 130px;
+	--section-space: 150px;
 	--section-title-fz: 75px;
 
 	@media (max-width: 1599.98px) {
-		--section-space: 110px;
+		--section-space: 130px;
 		--section-title-fz: 65px;
 		--section-title-mb: 45px;
 	}
 
 	@media (max-width: 1399.98px) {
-		--section-space: 100px;
 		--section-title-fz: 55px;
 	}
 
 	@media (max-width: 1199.98px) {
-		--section-space: 80px;
+		--section-space: 110px;
 		--section-title-fz: 42px;
 		--section-title-mb: 40px;
 	}
 
 	@media (max-width: 991.98px) {
-		// --section-space: 70px;
+		--section-space: 100px;
 		--section-title-fz: 32px;
 		--section-title-mb: 30px;
 	}
 
 	@media (max-width: 767.98px) {
-		--section-space: 60px;
 		--section-title-fz: 28px;
 	}
 
 	@media (max-width: 575.98px) {
-		// --section-space: 40px;
+		--section-space: 85px;
 		--section-title-fz: 24px;
 		--section-title-mb: 20px;
 	}

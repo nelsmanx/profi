@@ -2,15 +2,15 @@
 
 const faqList = [
 	{
-		question: 'Вы предоставляете услуги по договору?',
+		question: 'Вы предоставляете услуги по&nbsp;договору?',
 		answer: '<p>Да, с каждым заказчиком мы заключаем договор на услуги, учитывающий его требования и задачи. Этот договор служит юридическим документом, знаменующим начало взаимовыгодного партнерства, в котором мы берем на себя ответственность в качестве подрядчика. В договоре необходимо указать определенную важную информацию, такую как продолжительность срока сотрудничества, стоимость услуг, количество персонала, часы работы и прочие важные моменты.</p>'
 	},
 	{
-		question: 'Из чего складывается стоимость на услуги?',
+		question: 'Из чего складывается стоимость на&nbsp;услуги?',
 		answer: '<p>Мы составляем индивидуальный расчет цены для каждого клиента, учитывая необходимое количество сотрудников, их требуемую квалификацию, оплату проезда и проживания, продолжительность работы и наш процент. Если вы отправите нам запрос, наш компетентный менеджер составит смету, исходя из ваших условий, и озвучит вам стоимость.</p>'
 	},
 	{
-		question: 'С какими сферами бизнеса вы работаете?',
+		question: 'С какими сферами бизнеса вы&nbsp;работаете?',
 		answer: '<p>Profi специализируется на поиске и подборе персонала для различных сфер бизнеса, таких как производственные предприятия, торговые сети, рестораны, складские комплексы и не только. Мы также можем предложить помощь в поиске персонала для сферы услуг на временной или долгосрочной основе.</p>'
 	},
 	{
@@ -26,7 +26,7 @@ const faqList = [
 		answer: '<p>Рассчитываются индивидуально, всегда стараемся подобрать персонал для заказчика в самые кратчайшие сроки</p>'
 	},
 	{
-		question: 'Подбираете ли вы персонал по параметрам?',
+		question: 'Подбираете ли вы персонал по&nbsp;параметрам?',
 		answer: '<p>Да. У нас есть услуга подбора персонала по заданному профилю: все параметры вы можете указать при оформлении заявки.</p>'
 	},
 ]
@@ -42,7 +42,7 @@ const faqList = [
 					class="faq__item">
 					<div class="faq__item-question collapsed" data-bs-toggle="collapse" :data-bs-target="`#faq-answer-${index + 1}`">
 						<div class="faq__item-question-content">
-							<p>{{ faq.question }}</p>
+							<p v-html="faq.question"></p>
 						</div>
 						<button class="faq__item-question-button"></button>
 					</div>
@@ -57,12 +57,11 @@ const faqList = [
 
 <style scoped>
 .faq {
-	margin-bottom: var(--section-space);
-	padding-top: 22px;
+	margin-bottom: calc(var(--section-space) + 2px);
 }
 
 .faq__title {
-	margin-bottom: 70px;
+	margin-bottom: 102px;
 	color: var(--primary-accent-color);
 }
 
@@ -77,11 +76,15 @@ const faqList = [
 .faq__item-question {
 	display: grid;
 	grid-template-columns: 1fr auto;
-	align-items: start;
+	align-items: center;
 	gap: 70px;
 	padding: 32px 0 30px;
 	border-bottom: 2px solid #d9d9d9;
 	cursor: pointer;
+}
+
+.faq__item:first-child .faq__item-question {
+	padding-top: 0;
 }
 
 .faq__item-question-button {
@@ -140,5 +143,166 @@ const faqList = [
 
 .faq__item-answer-content:deep(li:not(:last-child)) {
 	margin-bottom: 13px;
+}
+
+@media (max-width: 1599.98px) {
+	.faq__title {
+		margin-bottom: var(--section-title-mb);
+	}
+
+	.faq__item-question-content:deep(p) {
+		font-size: 40px;
+	}
+
+	.faq__item-answer-content {
+		padding: 40px 0 15px;
+	}
+
+	.faq__item-answer-content:deep(p),
+	.faq__item-answer-content:deep(li) {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 1399.98px) {
+	.faq__item-question-button {
+		--scale: 0.8;
+	}
+
+	.faq__item-question-content:deep(p) {
+		font-size: 32px;
+	}
+
+	.faq__item-question {
+		padding: 25px 0;
+	}
+
+	.faq__item-answer-content {
+		padding: 35px 0 10px;
+	}
+
+	.faq__item-answer-content:deep(p),
+	.faq__item-answer-content:deep(li) {
+		font-size: 26px;
+	}
+}
+
+@media (max-width: 1199.98px) {
+	.faq__item-question-content:deep(p) {
+		font-size: 28px;
+	}
+
+	.faq__item-question {
+		padding: 20px 0;
+	}
+
+	.faq__item-question-button {
+		--scale: 0.7;
+	}
+
+	.faq__item-answer-content {
+		padding: 30px 0 10px;
+	}
+
+	.faq__item-answer-content:deep(p),
+	.faq__item-answer-content:deep(li) {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.faq__item-question-content:deep(p) {
+		font-size: 20px;
+	}
+
+	.faq__item-question {
+		gap: 40px;
+		padding: 15px 0;
+	}
+
+	.faq__item-question-button {
+		--scale: 0.6;
+	}
+
+	.faq__item-answer-content {
+		padding: 20px 0 5px;
+	}
+
+	.faq__item-answer-content:deep(p),
+	.faq__item-answer-content:deep(li) {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.faq {
+		margin-bottom: calc(var(--section-space));
+	}
+
+	.faq__item-question {
+		gap: 30px;
+	}
+
+	.faq__item-question-content:deep(p) {
+		font-size: 16px;
+	}
+
+	.faq__item-question-button {
+		--scale: 0.5;
+	}
+
+	.faq__item-answer-content:deep(p),
+	.faq__item-answer-content:deep(li) {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.faq__item-question-content:deep(p) {
+		font-size: 14px;
+	}
+
+	.faq__item-question {
+		gap: 15px;
+		padding: 12px 0;
+	}
+
+	.faq__item-question-button {
+		--scale: 0.4;
+		border-width: 1.5px;
+	}
+
+	.faq__item-answer-content {
+		padding: 12px 0 0;
+	}
+
+	.faq__item-answer-content:deep(p),
+	.faq__item-answer-content:deep(li) {
+		font-size: 13px;
+		line-height: 1.5;
+	}
+}
+
+@media (max-width: 375.98px) {
+	.faq__item-question {
+		padding: 9px 0;
+	}
+
+	.faq__item-question-content:deep(p) {
+		font-size: 11px;
+	}
+
+	.faq__item-question-button {
+		--scale: 0.35;
+	}
+
+	.faq__item-answer-content {
+		padding-top: 9px;
+	}
+
+	.faq__item-answer-content:deep(p),
+	.faq__item-answer-content:deep(li) {
+		font-size: 10px;
+	}
 }
 </style>
