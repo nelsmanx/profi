@@ -29,6 +29,7 @@ async function sendEmail(event) {
 					<p class="cta__desc">Оставляйте заявку - свяжемся в&nbsp;ближайшее время и&nbsp;ответим на&nbsp;все&nbsp;вопросы</p>
 				</div>
 				<form @submit.prevent="sendEmail($event)" class="cta__form" :class="`cta__form--${active}`">
+					<input type="hidden" name="category" :value="active == 'seek-job' ? 'Поиск работы' : 'Поиск сотрудников'" />
 					<input class="cta__form-input" type="text" name="name" placeholder="Имя" required>
 					<input class="cta__form-input" type="email" name="email" placeholder="E-mail">
 					<input v-inputmask-tel class="cta__form-input" type="tel" name="phone" placeholder="+ 7 999 999 99 99" required>
